@@ -1,0 +1,122 @@
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+    /*See fig 5 on index.html for how I learned to imput gifs as backgrounds*/
+    /*See fig 6 on index.html for .gif source*/
+    background-image: url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)
+}
+
+/*See fig 7 on index.html for font source, for the import code I used the same as the peer product page exersise from class time*/
+@font-face {
+    font-family: comic;
+    src: url(LDFComicSansBold.ttf);
+}
+
+/*See Fig 8 on index.html for code imput for gif in text*/
+/*See Fig 9 on index.html for .gif source*/
+h1 {
+    font-size: 300%;
+    font-family: comic;
+    letter-spacing: 2px;
+
+    background: url(https://media.giphy.com/media/3otO6NFBIAFg2vPZuM/giphy.gif);
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*See fig 7 on index.html for font source, for the import code I used the same as the peer product page exersise from class time*/
+@font-face {
+    font-family: comic-nml;
+    src: url(LDFComicSans.ttf);
+}
+
+h2 {
+    color: white;
+    opacity: 95%;
+    letter-spacing: 2px;
+    font-family: comic-nml;
+}
+
+header {
+    height: auto;
+    width: 100%;
+
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+/*See Fig 4 on index.html for where I learned how to space out collums*/
+.Containers {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    column-gap: 3.5%; 
+    row-gap: 3.5%;
+    text-align: center; 
+}
+
+.mass-text {
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.content-box {
+    height: min-content;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+
+/*See Fig 8 on index.html for code imput for gif inside*/
+/*See Fig 9 on index.html for .gif source*/
+button {
+    text-size-adjust: 80%;
+    padding: 3%;
+    margin-top: 3%;
+    font-weight: bolder;
+    font-family: comic;
+    src: url(LDFComicSans.ttf);
+
+    font-size: small;
+    background-image: url(https://media.giphy.com/media/3otO6NFBIAFg2vPZuM/giphy.gif);
+}
+
+p {
+    color: rgb(242, 249, 253);
+    font-size: 150%;
+    font-weight: bolder;
+    font-family: comic;
+}
+
+p2 {
+    color: rgb(255, 0, 251);
+    opacity: 80%;
+    font-size: 115%;
+    font-weight: bold;
+    font-family: comic-nml;
+}
+
+h3 {
+    color: rgb(242, 249, 253);
+    font-size: 100%;
+    font-weight: bolder;
+    font-family: comic;
+    text-align: center;
+}
+
+/*See fig 10 for .gif source*/
+.footerimg {
+    margin-top: 6%;
+    text-align: center; 
+}

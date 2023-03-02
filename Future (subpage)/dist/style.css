@@ -1,0 +1,86 @@
+/* CSS architecture: BEM methodology - Block, Element, Modifier
+	.block represents the higher level of an abstraction or component
+	.block__element represents a descendent of .block that helps form .block as a whole
+	.block--modifier represents a different state or version of .block
+ */
+
+/* Greet user */
+.greet {
+	text-align: center;
+}
+
+.followUP {
+	color: blueviolet;
+}
+
+.greet_name {
+	opacity: 1;
+	color: rgb(255, 255, 255);
+	width: auto;
+	background: none;
+	display: inline;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+.greet__input {
+	display:block; /*bootstrap center-block*/
+	margin-right:auto; /*bootstrap center-block*/
+	margin-left:auto; /*bootstrap center-block*/
+	margin: 0 auto;
+	border-radius: 0px;
+	background-color: #cce6ff00;
+	transition: background-color .3s ease-in-out;
+	padding-top: 50px;
+
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.953) ;
+	color: aliceblue;
+}
+
+/*Noticed there was a default imput highlight, so I used this link to help me figure out how to remove it*/
+/*https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element*/
+.greet__input:focus {
+	background-color: rgba(0, 0, 255, 0);
+	outline-width: 0;
+}
+
+
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: rgb(16, 59, 232);
+	background-image: url(https://media.giphy.com/media/78nXADhnE4BQfG4gup/giphy-downsized-large.gif);
+	background-blend-mode: luminosity;
+	background-size: 100%;
+	padding-top: 10%;
+}
+
+/*Refrenced from https://codepen.io/davidcochran/pen/WbWXoa*/
+button {
+	background-color: rgba(0, 255, 255, 0);
+	transition: background-color .3s ease-in-out;
+	font-size: large;
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-color: rgb(255, 255, 255);
+	border-width: 5px;
+	color: white;
+	margin-top: 25px;
+
+}
+
+button:hover {
+	background-color: rgba(43, 0, 255, 0.366);
+	transition: background-color .3s ease-in-out;
+}
